@@ -17,7 +17,7 @@ begin
       end
     end
   end
-  $stdout.write LanguagePack::Instrument.out
+  $stdout.write LanguagePack::Instrument.out.string
 rescue Exception => e
   Kernel.puts " !"
   e.message.split("\n").each do |line|
